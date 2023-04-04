@@ -21,10 +21,10 @@ class LogInForm(Form):
 app = Flask(__name__)
 app.secret_key = "memo"
 
-app.config["MYSQL_HOST"] = "localhost"
-app.config["MYSQL_USER"] = "root"
-app.config["MYSQL_PASSWOORD"] = ""
-app.config["MYSQL_DB"] = "firstdb"
+app.config["MYSQL_HOST"] = "localhost"    #db linki
+app.config["MYSQL_USER"] = "root"    #db kullanici adi
+app.config["MYSQL_PASSWOORD"] = ""    #db sifresi
+app.config["MYSQL_DB"] = "firstdb"    #db adi
 app.config["MYSQL_CURSORCLASS"] = "DictCursor"
 
 mysql = MySQL(app)
